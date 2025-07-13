@@ -54,7 +54,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <Router basename="/hausarzt-nord">
       <div className="App">
         <a href="#main-content" className="skip-link">
           Skip to main content
