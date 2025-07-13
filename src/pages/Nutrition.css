@@ -1,0 +1,194 @@
+/* Nutrition Header */
+.nutrition-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.nutrition-header h1 {
+  margin-bottom: var(--spacing-md);
+}
+
+.nutrition-header p {
+  font-size: var(--font-size-lg);
+  color: var(--medium-gray);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Nutrition Content */
+.nutrition-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  margin-bottom: var(--spacing-2xl);
+  align-items: center;
+}
+
+.nutrition-info h2 {
+  margin-bottom: var(--spacing-lg);
+}
+
+.nutrition-info p {
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-lg);
+  line-height: 1.6;
+}
+
+.nutrition-image__placeholder {
+  background: var(--light-gray);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-2xl);
+  text-align: center;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nutrition-image__placeholder span {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.nutrition-image__placeholder p {
+  font-size: var(--font-size-lg);
+  color: var(--medium-gray);
+  margin: 0;
+}
+
+/* Nutrition Services */
+.nutrition-services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+}
+
+.nutrition-service-card {
+  background: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.nutrition-service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.nutrition-service-card__icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.nutrition-service-card__title {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--primary-green);
+}
+
+.nutrition-service-card__description {
+  color: var(--medium-gray);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* CTA Section */
+.nutrition-cta {
+  margin-top: var(--spacing-2xl);
+  padding: var(--spacing-2xl);
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--accent-blue) 100%);
+  border-radius: var(--border-radius-lg);
+  color: var(--white);
+  text-align: center;
+}
+
+.nutrition-cta__content h2 {
+  color: var(--white);
+  margin-bottom: var(--spacing-lg);
+}
+
+.nutrition-cta__content p {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-xl);
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nutrition-cta__buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nutrition-cta__buttons .btn {
+  min-width: 160px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nutrition-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .nutrition-info {
+    order: 2;
+  }
+
+  .nutrition-image {
+    order: 1;
+  }
+
+  .nutrition-services__grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .nutrition-service-card {
+    padding: var(--spacing-lg);
+  }
+
+  .nutrition-cta {
+    padding: var(--spacing-xl);
+  }
+
+  .nutrition-cta__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .nutrition-header {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .nutrition-service-card {
+    padding: var(--spacing-md);
+  }
+
+  .nutrition-service-card__icon {
+    font-size: 2.5rem;
+  }
+
+  .nutrition-image__placeholder {
+    min-height: 200px;
+    padding: var(--spacing-lg);
+  }
+
+  .nutrition-image__placeholder span {
+    font-size: 3rem;
+  }
+
+  .nutrition-cta {
+    padding: var(--spacing-lg);
+  }
+} 

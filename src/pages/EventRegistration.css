@@ -1,0 +1,108 @@
+/* Registration Header */
+.registration-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.registration-header h1 {
+  margin-bottom: var(--spacing-md);
+}
+
+.registration-header p {
+  font-size: var(--font-size-lg);
+  color: var(--medium-gray);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Registration Content */
+.registration-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  margin-bottom: var(--spacing-2xl);
+}
+
+/* Registration Form Section */
+.registration-form-section h2 {
+  margin-bottom: var(--spacing-lg);
+}
+
+.registration-form {
+  background: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+/* Registration Info */
+.registration-info h2 {
+  margin-bottom: var(--spacing-lg);
+}
+
+.registration-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.registration-detail {
+  background: var(--white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.registration-detail:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.registration-detail h3 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-sm);
+  color: var(--primary-green);
+}
+
+.registration-detail p {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--medium-gray);
+}
+
+.registration-contact {
+  margin-top: var(--spacing-lg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .registration-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .registration-form {
+    padding: var(--spacing-lg);
+  }
+
+  .registration-detail {
+    padding: var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .registration-header {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .registration-form {
+    padding: var(--spacing-md);
+  }
+
+  .registration-detail {
+    padding: var(--spacing-sm);
+  }
+} 

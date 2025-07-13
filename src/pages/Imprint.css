@@ -1,0 +1,95 @@
+/* Imprint Header */
+.imprint-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.imprint-header h1 {
+  margin-bottom: var(--spacing-md);
+}
+
+.imprint-header p {
+  font-size: var(--font-size-lg);
+  color: var(--medium-gray);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Imprint Content */
+.imprint-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.imprint-section {
+  margin-bottom: var(--spacing-2xl);
+  padding: var(--spacing-xl);
+  background: var(--white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.imprint-section h2 {
+  margin-bottom: var(--spacing-lg);
+  color: var(--primary-green);
+  font-size: var(--font-size-xl);
+}
+
+.imprint-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.imprint-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.imprint-item strong {
+  color: var(--primary-green);
+  font-weight: 600;
+}
+
+.imprint-item p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.imprint-item a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.imprint-item a:hover {
+  color: var(--primary-green);
+}
+
+.imprint-section p {
+  margin-bottom: var(--spacing-md);
+  line-height: 1.6;
+}
+
+.imprint-section p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .imprint-section {
+    padding: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  .imprint-header {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .imprint-section {
+    padding: var(--spacing-md);
+  }
+} 

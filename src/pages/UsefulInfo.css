@@ -1,0 +1,225 @@
+/* Useful Info Header */
+.useful-info-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.useful-info-header h1 {
+  margin-bottom: var(--spacing-md);
+}
+
+.useful-info-header p {
+  font-size: var(--font-size-lg);
+  color: var(--medium-gray);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Downloads Section */
+.downloads-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+}
+
+.download-card {
+  background: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.download-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.download-card__icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.download-card__title {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--primary-green);
+}
+
+.download-card__description {
+  margin-bottom: var(--spacing-lg);
+  color: var(--medium-gray);
+  line-height: 1.6;
+}
+
+.download-card__meta {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.download-card__type,
+.download-card__size {
+  background: var(--light-gray);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-base);
+  color: var(--medium-gray);
+}
+
+/* Links Section */
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+}
+
+.link-card {
+  background: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+}
+
+.link-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.link-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-md);
+}
+
+.link-card__title {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-sm);
+  color: var(--primary-green);
+}
+
+.link-card__category {
+  background: var(--accent-blue);
+  color: var(--white);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+}
+
+.link-card__description {
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.6;
+  color: var(--medium-gray);
+}
+
+/* Resources Section */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+}
+
+.resource-card {
+  background: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.resource-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.resource-card__icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.resource-card__title {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--primary-green);
+}
+
+.resource-card__description {
+  color: var(--medium-gray);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* CTA Section */
+.useful-info-cta {
+  margin-top: var(--spacing-2xl);
+  padding: var(--spacing-2xl);
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--accent-blue) 100%);
+  border-radius: var(--border-radius-lg);
+  color: var(--white);
+  text-align: center;
+}
+
+.useful-info-cta__content h2 {
+  color: var(--white);
+  margin-bottom: var(--spacing-lg);
+}
+
+.useful-info-cta__content p {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-xl);
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .downloads-grid,
+  .links-grid,
+  .resources-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .download-card,
+  .link-card,
+  .resource-card {
+    padding: var(--spacing-lg);
+  }
+
+  .useful-info-cta {
+    padding: var(--spacing-xl);
+  }
+}
+
+@media (max-width: 480px) {
+  .useful-info-header {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .download-card,
+  .link-card,
+  .resource-card {
+    padding: var(--spacing-md);
+  }
+
+  .download-card__icon,
+  .resource-card__icon {
+    font-size: 2.5rem;
+  }
+
+  .useful-info-cta {
+    padding: var(--spacing-lg);
+  }
+} 

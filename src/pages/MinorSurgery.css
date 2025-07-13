@@ -1,0 +1,237 @@
+/* Surgery Header */
+.surgery-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.surgery-header h1 {
+  margin-bottom: var(--spacing-md);
+}
+
+.surgery-header p {
+  font-size: var(--font-size-lg);
+  color: var(--medium-gray);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Surgery Content */
+.surgery-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  margin-bottom: var(--spacing-2xl);
+  align-items: center;
+}
+
+.surgery-info h2 {
+  margin-bottom: var(--spacing-lg);
+}
+
+.surgery-info p {
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-lg);
+  line-height: 1.6;
+}
+
+.surgery-image__placeholder {
+  background: var(--light-gray);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-2xl);
+  text-align: center;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.surgery-image__placeholder span {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.surgery-image__placeholder p {
+  font-size: var(--font-size-lg);
+  color: var(--medium-gray);
+  margin: 0;
+}
+
+/* Procedures Section */
+.procedures-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+}
+
+.procedure-card {
+  background: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.procedure-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.procedure-card__icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.procedure-card__title {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--primary-green);
+}
+
+.procedure-card__description {
+  color: var(--medium-gray);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Facilities Section */
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+}
+
+.facility-card {
+  background: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.facility-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.facility-card__icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.facility-card__title {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--primary-green);
+}
+
+.facility-card__description {
+  color: var(--medium-gray);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* CTA Section */
+.surgery-cta {
+  margin-top: var(--spacing-2xl);
+  padding: var(--spacing-2xl);
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--accent-blue) 100%);
+  border-radius: var(--border-radius-lg);
+  color: var(--white);
+  text-align: center;
+}
+
+.surgery-cta__content h2 {
+  color: var(--white);
+  margin-bottom: var(--spacing-lg);
+}
+
+.surgery-cta__content p {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-xl);
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.surgery-cta__buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.surgery-cta__buttons .btn {
+  min-width: 160px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .surgery-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .surgery-info {
+    order: 2;
+  }
+
+  .surgery-image {
+    order: 1;
+  }
+
+  .procedures-grid,
+  .facilities-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .procedure-card,
+  .facility-card {
+    padding: var(--spacing-lg);
+  }
+
+  .surgery-cta {
+    padding: var(--spacing-xl);
+  }
+
+  .surgery-cta__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .surgery-header {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .procedure-card,
+  .facility-card {
+    padding: var(--spacing-md);
+  }
+
+  .procedure-card__icon,
+  .facility-card__icon {
+    font-size: 2.5rem;
+  }
+
+  .surgery-image__placeholder {
+    min-height: 200px;
+    padding: var(--spacing-lg);
+  }
+
+  .surgery-image__placeholder span {
+    font-size: 3rem;
+  }
+
+  .surgery-cta {
+    padding: var(--spacing-lg);
+  }
+} 
