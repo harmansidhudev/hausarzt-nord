@@ -2,6 +2,7 @@
   "name": "hausarzt-nord-website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://harmansidhudev.github.io/hausarzt-nord",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
